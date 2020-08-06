@@ -126,12 +126,15 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.483098-pre1" />
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.5.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1260" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.1.0.483098-pre1</Version>
+      <Version>4.7.0.1260</Version>
     </PackageReference>
     <PackageReference Include="PropertyChanged.Fody">
-      <Version>3.0.1</Version>
+      <Version>3.2.8</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -141,10 +144,7 @@
       <Name>CreditCardUISample</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Renderers\" />
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\ic_visa%403x.png" />
     <BundleResource Include="Resources\ic_visa%402x.png" />

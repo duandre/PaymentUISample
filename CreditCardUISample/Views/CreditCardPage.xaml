@@ -11,6 +11,7 @@
                     FontAttributes="Bold"
                     TextColor="{StaticResource PrimaryDark}"/>
     </NavigationPage.TitleView>
+    
     <ScrollView>
         <Grid VerticalOptions="FillAndExpand"
               ColumnSpacing="20"
@@ -41,13 +42,12 @@
                       Grid.Row="1"
                       Grid.Column="0"
                       Grid.ColumnSpan="3">
-                  <StackLayout Orientation="Horizontal"
+                  
+                   <StackLayout Orientation="Horizontal"
                                Spacing="20">
-                        <Image Source="{Binding CardNumber,Converter={StaticResource CardConverter}}"
-                               HeightRequest="30"/>
+                        <Image Source="{Binding CardNumber,Converter={StaticResource CardConverter}}" HeightRequest="30"/>
 
-                        <Entry HorizontalOptions="FillAndExpand"
-                               Keyboard="Numeric"
+                        <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"
                                Text="{Binding CardNumber, Mode=TwoWay}"
                                Visual="Custom">
                              <Entry.Behaviors>

@@ -5,7 +5,8 @@
              BackgroundColor="{StaticResource Primary}"
              HorizontalOptions="FillAndExpand"
              VerticalOptions="Start">
-            <Frame Margin="40,10,40,30"
+            
+    <Frame Margin="40,10,40,30"
                    Padding="20"
                    Visual="Material"
                    BackgroundColor="{Binding CardNumber, Converter={StaticResource CardColorConverter}}">
